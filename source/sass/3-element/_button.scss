@@ -1,0 +1,10 @@
+.db {
+    &.button {
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: $radius;
+        &.default {
+            background-color: $grey-lightest;
+        }
+    }
+}

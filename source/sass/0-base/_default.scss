@@ -1,0 +1,58 @@
+html {
+    background-color: #fff;
+    min-width: 300px;
+    font-size: $font-size;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+}
+
+article, aside, figure, footer, header, section {
+    display: block;
+}
+
+body, button, input, select, textarea {
+    font-family: $font-family
+}
+
+input, button, select, textarea {
+    font-size: $fs-7;
+    line-height: 1;
+}
+
+body {
+    color: $grey-darker;
+    font-size: 1rem;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
+hr {
+    background-color: $grey-lightest;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 1.2rem 0;
+}
+
+input[type="checkbox"],input[type="radio"] {
+    vertical-align: baseline
+}
+
+small {
+    font-size: $fs-9;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+    fill: $grey-darker;
+}

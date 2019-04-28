@@ -1,0 +1,55 @@
+html, body, h1, h2, h3, h4, h5, h6, p, span, small, strong,
+ul, ol, li, a, i, figure, figcaption, img, video, iframe, embed,
+div, header, menu, nav, main, aside, article, footer, label,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    &::before, &::after {
+        box-sizing: inherit;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    background: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    &:focus {
+        outline: 0;
+    }
+}
+
+img, video, embed, iframe {
+    height: auto;
+    max-width: 100%;
+}
+
+audio {
+    max-width: 100%;
+}

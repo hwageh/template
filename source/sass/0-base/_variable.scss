@@ -1,0 +1,58 @@
+////////////////////////////////////////////////////
+/// Typography
+////////////////////////////////////////////////////
+$font-family: 'Rubik', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-size: 16px;
+$font-weight: 400;
+$line-height: 1.5;
+
+$fs-1: 3rem;
+$fs-2: 2.5rem;
+$fs-3: 2rem;
+$fs-4: 1.5rem;
+$fs-5: 1.25rem; //20px
+$fs-6: 1rem; //16px
+$fs-7: 0.9375rem; //15px
+$fs-8: 0.875rem; //14px
+$fs-9: 0.75rem; //12px
+$fs-x: 0.6875rem; //11px
+
+$fw-medium: 500;
+
+////////////////////////////////////////////////////
+/// Colors.
+////////////////////////////////////////////////////
+$black:         #22292f;
+$grey-darkest:  #202F3B;
+$grey-darker:   #2D4053;
+$grey-dark:     #5D6D7E;
+$grey-base:     #85929E;
+$grey-light:    #AEB6BE;
+$grey-lighter:  #D6DBDF;
+$grey-lightest: #EBEDEF;
+$white:         #FFFFFF;
+$primary:       #1173C7;
+$success:       #38c172;
+$warning:       #f6993f;
+$danger:        #e3342f;
+
+////////////////////////////////////////////////////
+/// Responsive.
+////////////////////////////////////////////////////
+$lg-screen-min: 1200px;
+$screen-max:    1199px;
+$screen-min:    992px;
+$tablet-max:    991px;
+$tablet-min:    768px;
+$mobile-max:    767px;
+$mobile-min:    576px;
+
+////////////////////////////////////////////////////
+/// Miscellaneous.
+////////////////////////////////////////////////////
+$easing: ease-out;
+$radius-small: 2px;
+$radius: 4px;
+$radius-large: 6px;
+$radius-rounded: 290486px;
+$speed: 86ms;

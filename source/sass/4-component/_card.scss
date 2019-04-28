@@ -1,0 +1,20 @@
+.db {
+    &.card {
+        border: 1px solid $grey-lightest;
+        border-radius: $radius;
+
+        &.product {
+            padding: 20px;
+            margin-bottom: 16px;
+            .card-header {
+                @include dimensions(100%, 140px);
+                background-color: $grey-lightest;
+            }
+            .card-body {
+                margin: 10px 0;
+                height: 65px;
+                overflow: hidden;
+            }
+        }
+    }
+}

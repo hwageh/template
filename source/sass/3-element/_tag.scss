@@ -1,0 +1,15 @@
+.db {
+    &.tag {
+
+        &.currency {
+            font-size: $fs-9;
+            line-height: 1;
+            font-weight: $fw-medium;
+            color: $grey-darker;
+            border: 1px solid $grey-darker;
+            padding: 2px 3px;
+            border-radius: 3px;
+            margin-right: 7px;
+        }
+    }
+}

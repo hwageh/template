@@ -1,0 +1,78 @@
+.db {
+    &.menu {
+        display: block;
+
+        > li {
+            padding: 7px 0;
+            border-bottom: 1px solid $grey-lightest;
+            position: relative;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            > a {
+                @include flex-center;
+                justify-content: space-between;
+                font-size: 15px;
+                color: $grey-darkest;
+            }
+
+            &.active > a {
+                color: $black;
+                svg {
+                    transform: rotate(90deg);
+                    @include transition;
+                }
+            }
+
+            &.active > .menu-dropdown {
+                display: block;
+            }
+
+            > .menu-dropdown {
+                display: none;
+                margin-top: 5px;
+                padding: 5px 0;
+            }
+        }
+
+        @include screen {
+            @include flex-center;
+            height: 50px;
+
+            > li {
+                padding: 10px 15px;
+                border: none;
+
+                &:first-child { padding-left: 0; }
+                &:last-child { padding-right: 0; }
+
+                > a {
+                    font-size: 16px;
+                    svg {
+                        display: none;
+                    }
+                }
+
+                > .menu-dropdown {
+                    padding: 10px 15px;
+                    position: absolute;
+                    top: 90%;
+                    left: 0;
+                    background-color: #fff;
+                    min-width: 250px;
+                    max-height: 400px;
+                    overflow-y: auto;
+                    box-shadow: 0px 2px 4px rgba(0,0,0,0.12);
+                    z-index: +9997;
+                }
+
+                &:last-child > .menu-dropdown {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

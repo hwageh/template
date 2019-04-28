@@ -1,0 +1,37 @@
+
+@mixin dimensions($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin transition {
+    transition: all $speed $easing;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-center {
+    @include flex;
+    align-items: center;
+}
+
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+        @content;
+    }
+}
+
+@mixin wide {
+    @media screen and (min-width: $lg-screen-min) {
+        @content;
+    }
+}
+
+@mixin screen {
+    @media screen and (min-width: $screen-min)  {
+        @content;
+    }
+}

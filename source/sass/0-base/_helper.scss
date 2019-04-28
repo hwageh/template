@@ -1,0 +1,76 @@
+.db {
+    &.tx-uppercase        { text-transform: uppercase; }
+    &.tx-capitalize       { text-transform: capitalize; }
+    &.tx-center           { text-align: center; }
+    &.lh-1                { line-height: 1.3; }
+
+    &.tx-1                { font-size: $fs-1 };
+    &.tx-2                { font-size: $fs-2 };
+    &.tx-3                { font-size: $fs-3 };
+    &.tx-4                { font-size: $fs-4 };
+    &.tx-5                { font-size: $fs-5 };
+    &.tx-6                { font-size: $fs-6 };
+    &.tx-7                { font-size: $fs-7 };
+    &.tx-8                { font-size: $fs-8 };
+    &.tx-9                { font-size: $fs-9 };
+
+    &.tx-black            { color: $black; }
+    &.tx-darkest          { color: $grey-darkest; }
+    &.tx-darker           { color: $grey-darker; }
+    &.tx-dark             { color: $grey-dark; }
+    &.tx-base             { color: $grey-base; }
+    &.tx-light            { color: $grey-light; }
+    &.tx-lighter          { color: $grey-lighter; }
+    &.tx-lightest         { color: $grey-lightest; }
+    &.tx-white            { color: $white; }
+    &.tx-primary          { color: $primary; }
+    &.tx-success          { color: $success; }
+    &.tx-danger           { color: $danger; }
+
+    &.fill-black          { fill: $black; }
+    &.fill-darkest        { fill: $grey-darkest; }
+    &.fill-darker         { fill: $grey-darker; }
+    &.fill-dark           { fill: $grey-dark; }
+    &.fill-base           { fill: $grey-base; }
+    &.fill-light          { fill: $grey-light; }
+    &.fill-lighter        { fill: $grey-lighter; }
+    &.fill-lightest       { fill: $grey-lightest; }
+    &.fill-white          { fill: $white; }
+    &.fill-primary        { fill: $primary; }
+    &.fill-success        { fill: $success; }
+    &.fill-danger         { fill: $danger; }
+
+    &.bg-black            { background-color: $black; }
+    &.bg-darkest          { background-color: $grey-darkest; }
+    &.bg-darker           { background-color: $grey-darker; }
+    &.bg-dark             { background-color: $grey-dark; }
+    &.bg-base             { background-color: $grey-base; }
+    &.bg-light            { background-color: $grey-light; }
+    &.bg-lighter          { background-color: $grey-lighter; }
+    &.bg-lightest         { background-color: $grey-lightest; }
+    &.bg-white            { background-color: $white; }
+    &.bg-primary          { background-color: $primary; }
+    &.bg-success          { background-color: $success; }
+    &.bg-danger           { background-color: $danger; }
+
+    &.has-br-tp           { border-top: 1px solid $grey-lightest };
+
+    &.flex                { display: flex; }
+    &.ai-center           { align-items: center; }
+    &.jc-between          { justify-content: space-between; }
+
+
+    &.visible-screen      {
+        display: none;
+        @include screen {
+            display: block;
+        }
+    }
+
+    &.hidden-screen      {
+        display: block;
+        @include screen {
+            display: none;
+        }
+    }
+}

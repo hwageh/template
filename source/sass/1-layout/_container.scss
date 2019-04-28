@@ -1,0 +1,8 @@
+.db {
+    &.container {
+        padding: 0 30px;
+
+        max-width: $lg-screen-min;
+        margin: 0 auto;
+    }
+}
